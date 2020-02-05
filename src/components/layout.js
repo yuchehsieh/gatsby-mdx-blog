@@ -1,5 +1,5 @@
 import React from "react";
-import './layout.module.css';
+import './layout.css';
 
 const Layout = ({children}) => {
     return (

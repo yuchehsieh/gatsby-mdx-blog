@@ -18,3 +18,10 @@ body {
     color: var(--mainBlack);
 }
 
+.code {
+    background: cornflowerblue;
+    display: inline-block;
+    padding: 1rem;
+    color: var(--mainWhite);
+    margin: 2rem 0;
+}
