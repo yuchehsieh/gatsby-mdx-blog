@@ -1,8 +1,9 @@
-import React from "react";
+import React from "react"
 import PostCard from "./postCard"
 
 
-const PostList = () => {
+const PostList = (props) => {
+
   return (
     <div>
       hello from post list.
@@ -10,5 +11,6 @@ const PostList = () => {
     </div>
   )
 }
+
 
 export default PostList
