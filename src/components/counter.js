@@ -1,20 +1,19 @@
-import React, { useState } from "react"
+import React, { Component } from "react"
 
-const Counter = () => {
-
-  const [counter, setCounter] = useState(0)
-
-  const increaseCounter = () => {
-    setCounter(counter + 1)
+export default class Counter extends Component {
+  state = {
+    count: 0,
   }
-
-  return (
-    <div className="counter">
-      <h3>click the button if you like it.</h3>
-      <h3>likes: {counter}</h3>
-      <button onClick={increaseCounter}>click me</button>
-    </div>
-  )
+  increaseCount = () => {
+    this.setState({ count: this.state.count + 1 })
+  }
+  render() {
+    return (
+      <div className="counter">
+        <h3>click the button if you like the post</h3>
+        <h3>likes {this.state.count}</h3>
+        <button onClick={this.increaseCount}>click me</button>
+      </div>
+    )
+  }
 }
-
-export default Counter
