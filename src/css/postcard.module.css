@@ -47,6 +47,12 @@
     align-items: center;
     padding: 0 1.5rem;
   }
+
+  /**
+    setting up the height of each image,
+    using .image > div directly pointed at the first div(gatsby-image-wrapper)
+  */
+
   .image > div {
     height: 250px;
   }
