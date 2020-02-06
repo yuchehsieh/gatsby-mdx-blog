@@ -7,8 +7,6 @@ export default ({ data }) => {
 
   const posts = data.posts.edges;
 
-  console.log(posts);
-
   return (
     <Layout>
       Hello world!
@@ -34,7 +32,7 @@ export const getPosts = graphql`
             image {
               childImageSharp {
                 fluid {
-                  srcSet
+                  ...GatsbyImageSharpFluid_withWebp
                 }
               }
             }
